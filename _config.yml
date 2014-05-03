@@ -1,0 +1,28 @@
+name: lxsameer\'s Blog
+markdown: redcarpet
+pygments: true
+url: http://blog.lxsameer.com
+description: A publication about my life and the world around me
+copyright: copyright 2010-2014 @lxsameer
+rss_path: /feed
+rss_name: feed.xml
+rss_post_limit: 10
+tag_page_layout: tag_page
+tag_page_dir: tag
+lsi: false
+paginate: 10
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
+
+authors:
+  lxsameer:
+    name: Sameer Rahmani
+    display_name: lxsameer
+    gravatar: c
+    email: lxsameer@gnu.org
+    web: http://www.lxsameer.com
+    twitter: lxsameer
+    github: lxsameer
+    color: green
+    linkedin: ir.linkedin.com/pub/sameer-rahmani/54/407/423/
+    ohloh: "<a href='https://www.ohloh.net/accounts/35021?ref=Tiny' target='_blank'><img alt='Ohloh profile for Sameer Rahmani' border='0' height='15' src='https://www.ohloh.net/accounts/35021/widgets/account_tiny.gif' width='80' /></a>"
+    about: A Bad-ass developer who loves programming and enjoy learning new stuff. He is a senior developer in [Yellowen](http://Yellowen.com) and manage some of the **Yellowen** free software projects. He enjoys software development, Electronics, Training Kyokushin Karate and play music.
