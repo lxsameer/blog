@@ -19947,3 +19947,17 @@ blockquote p {
   display: inline-block;
   padding-top: 0.2em;
 }
+
+/* line 169, ../_sass/styles.scss */
+.mainavatar {
+  border-radius: 4px;
+  margin-top: 1em !important;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 176, ../_sass/styles.scss */
+.largewidgettitle {
+  font-size: 3em;
+  display: block;
+}

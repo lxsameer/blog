@@ -1,55 +1,56 @@
 ---
-layout: home
+layout: default
 title: lxsameer's Blog
 ---
 
-{% for post in paginator.posts %}
-{% assign author = site.authors[post.author] %}
-<div class="post row">
-  <div class="ui segment">
-    <br class="mobile only"/>
-    <h1 class="post-title"><a href="/authors/{{ author.display_name }}/"><img class="ui avatar image" src="{{ author.email | to_gravatar }}" title="{{ author.display_name }}"></a> <a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <div class="ui teal top right attached  label"><i class="large time icon"></i>{{ post.date | date_to_string }}</div>
-    <p>{{ post.excerpt }}</p>
+  <div class="ui three column grid">
+    <div class="equal height row">
 
+    <div class="eight wide column">
+      <div class="ui teal segment">
+        <div class="ui stackable two column grid">
+
+          <div class=" four wide column center aligned">
+            <img src="/images/avatar.jpeg" alt="lxsameer's avatar" class="mainavatar"/>
+          </div>
+
+          <div class="twelve wide column">
+            <p>
+              My name is Sameer and I'm a senior developer and project manager at Yellowen and a proud member of GNU Project and Karajlug Community. I love programming and I spend most of my time developing Free softwares. I don't like to write a lot of articles or be involved to much into the philosophy of things, Instead I like to do practical things and I let my work speak for itself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eight wide column">
+      <div class="ui blue center aligned segment">
+        <div class="ui stackable three column grid center aligned">
+          <div class="row">
+            <div class="column">
+              <span class="largewidgettitle">2000</span>
+              <span>Tweets</span>
+            </div>
+            <div class="column">
+              <span class="largewidgettitle">190</span>
+              <span>Following</span>
+            </div>
+            <div class="column">
+              <span class="largewidgettitle">200</span>
+              <span>Followers</span>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row"><div class="column">
+          <span><i class="big  twitter icon"></i></span>
+        </div></div>
+
+      </div>
+    </div>
   </div>
 </div>
-<br />
-{% endfor %}
 
-<br />
 <div class="row">
-  <div class="right aligned column">
-  <div class="pagination mini ui buttons">
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a href="/" class="mini ui orange animated button previous">
-    {% else %}
-    <a href="/page{{ paginator.previous_page }}" class="mini ui orange animated button previous">
-    {% endif %}
-      <div class="visible content">
-        Prev
-      </div>
-      <div class="hidden content">
-        <i class="left arrow icon"></i>
-      </div>
-    </a>
-    {% else %}
-    <span class="previous mini ui disabled orange button">Previous</span>
-    {% endif %}
-    <span class="page_number mini ui button">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next mini ui green animated button">
-      <div class="visible content">
-      Next
-      </div>
-      <div class="hidden content">
-        <i class="right arrow icon"></i>
-      </div>
-    </a>
-    {% else %}
-    <span class="next mini ui disabled green button">Next</span>
-  {% endif %}
-  </div>
-  </div>
+
 </div>

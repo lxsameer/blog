@@ -4,7 +4,7 @@ highlighter: pygments
 url: http://lxsameer.com
 description: A publication about my life and the world around me
 copyright: copyright 2010-2014 @lxsameer
-rss_path: /feed
+rss_path: /blog/feed
 rss_name: feed.xml
 rss_post_limit: 10
 tag_page_layout: tag_page
@@ -14,7 +14,7 @@ paginate: 10
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
 source: ./src
 destination: ./build
-permalink: /posts/:categories/:title/
+permalink: /blog/posts/:categories/:title/
 paginate_path: "blog/page:num"
 
 authors:
