@@ -15,6 +15,7 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
 source: ./src
 destination: ./build
 permalink: /posts/:categories/:title/
+paginate_path: "blog/page:num"
 
 authors:
   lxsameer:
