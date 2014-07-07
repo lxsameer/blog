@@ -19759,37 +19759,92 @@ ol.ui.horizontal.list li:before,
   opacity: 0.8;
 }
 
-/* line 6, ../_sass/styles.scss */
+/* line 2, ../_sass/graph.scss */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #9f9f9f;
+  shape-rendering: crispEdges;
+}
+
+/* line 8, ../_sass/graph.scss */
+.bar {
+  fill: orange;
+}
+
+/* line 12, ../_sass/graph.scss */
+.bar:hover {
+  fill: orangered;
+}
+
+/* line 16, ../_sass/graph.scss */
+.x.axis path {
+  display: none;
+}
+
+/* line 20, ../_sass/graph.scss */
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/* line 30, ../_sass/graph.scss */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+/* line 43, ../_sass/graph.scss */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* line 7, ../_sass/styles.scss */
 html, body {
   background: #f2f2f2;
   color: #333333;
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 16, ../_sass/styles.scss */
+/* line 17, ../_sass/styles.scss */
 .sidebar {
   text-align: left;
 }
 
-/* line 21, ../_sass/styles.scss */
+/* line 22, ../_sass/styles.scss */
 .left-header h1 {
   font-size: 1.6em;
 }
-/* line 24, ../_sass/styles.scss */
+/* line 25, ../_sass/styles.scss */
 .left-header h2 {
   font-size: 1.4em;
 }
-/* line 27, ../_sass/styles.scss */
+/* line 28, ../_sass/styles.scss */
 .left-header p {
   font-size: 1.2;
 }
 
-/* line 35, ../_sass/styles.scss */
+/* line 36, ../_sass/styles.scss */
 .ui.menu {
   border-radius: 0;
 }
 
-/* line 39, ../_sass/styles.scss */
+/* line 40, ../_sass/styles.scss */
 .header-bg {
   background: url("/images/header.png") 0 0 repeat-x transparent;
   position: absolute;
@@ -19800,7 +19855,7 @@ html, body {
   display: block;
 }
 
-/* line 48, ../_sass/styles.scss */
+/* line 49, ../_sass/styles.scss */
 a {
   text-decoration: none;
   color: #006699;
@@ -19810,7 +19865,7 @@ a {
   -o-transition: color 300ms linear 0ms;
   transition: color 300ms linear 0ms;
 }
-/* line 53, ../_sass/styles.scss */
+/* line 54, ../_sass/styles.scss */
 a:visited, a:active {
   color: #006699;
   -webkit-transition: color 300ms linear;
@@ -19819,7 +19874,7 @@ a:visited, a:active {
   -o-transition: color 300ms linear 0ms;
   transition: color 300ms linear 0ms;
 }
-/* line 58, ../_sass/styles.scss */
+/* line 59, ../_sass/styles.scss */
 a:hover {
   -webkit-transition: color 300ms linear;
   -webkit-transition-delay: 0ms;
@@ -19829,51 +19884,51 @@ a:hover {
   color: #37465d;
 }
 
-/* line 65, ../_sass/styles.scss */
+/* line 66, ../_sass/styles.scss */
 .center-image {
   margin: 1em auto;
 }
 
-/* line 70, ../_sass/styles.scss */
+/* line 71, ../_sass/styles.scss */
 .brand {
   padding-top: 8em;
   border-right: 1px dotted #d9d9d9;
 }
-/* line 74, ../_sass/styles.scss */
+/* line 75, ../_sass/styles.scss */
 .brand h1 {
   font-size: 1.3em;
 }
 
-/* line 79, ../_sass/styles.scss */
+/* line 80, ../_sass/styles.scss */
 .post {
   line-height: 1.5;
 }
-/* line 81, ../_sass/styles.scss */
+/* line 82, ../_sass/styles.scss */
 .post .post-title {
   font-size: 1.6em;
 }
 
-/* line 85, ../_sass/styles.scss */
+/* line 86, ../_sass/styles.scss */
 .post code {
   border-radius: 3px;
   background-color: #eeeeec;
   padding: 0.1em 0.2em;
 }
 
-/* line 91, ../_sass/styles.scss */
+/* line 92, ../_sass/styles.scss */
 .post pre {
   border-radius: 3px;
   background-color: #eeeeec;
   padding: 0.2em;
 }
 
-/* line 97, ../_sass/styles.scss */
+/* line 98, ../_sass/styles.scss */
 .maincontainer {
   min-height: 100%;
   position: relative;
 }
 
-/* line 102, ../_sass/styles.scss */
+/* line 103, ../_sass/styles.scss */
 footer {
   clear: both;
   z-index: 10;
@@ -19884,71 +19939,71 @@ footer {
   color: #eee;
   margin-top: 5em;
 }
-/* line 112, ../_sass/styles.scss */
+/* line 113, ../_sass/styles.scss */
 footer .column {
   padding: 0.5em 0;
 }
-/* line 114, ../_sass/styles.scss */
+/* line 115, ../_sass/styles.scss */
 footer .column h1 {
   margin-bottom: 0 !important;
 }
-/* line 117, ../_sass/styles.scss */
+/* line 118, ../_sass/styles.scss */
 footer .column span {
   font-size: 0.7em !important;
   color: #b9b9b9 !important;
 }
-/* line 120, ../_sass/styles.scss */
+/* line 121, ../_sass/styles.scss */
 footer .column span a {
   color: white;
 }
 
-/* line 129, ../_sass/styles.scss */
+/* line 130, ../_sass/styles.scss */
 .ui.label {
   text-transform: capitalize;
 }
 
-/* line 133, ../_sass/styles.scss */
+/* line 134, ../_sass/styles.scss */
 .fsegment {
   font-size: 0.8rem !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-/* line 140, ../_sass/styles.scss */
+/* line 141, ../_sass/styles.scss */
 .author h1 {
   font-size: 1.4em;
 }
 
-/* line 145, ../_sass/styles.scss */
+/* line 146, ../_sass/styles.scss */
 .invert-link, .invert-link:active, .invert-link:visited {
   color: #ddd;
   text-shadow: 0 1px 1px #777777;
 }
 
-/* line 150, ../_sass/styles.scss */
+/* line 151, ../_sass/styles.scss */
 .invert-link:hover {
   color: white !important;
 }
 
-/* line 154, ../_sass/styles.scss */
+/* line 155, ../_sass/styles.scss */
 blockquote {
   background: #f2f2f2;
   border-radius: 3px;
   border: 1px solid #eeeeee;
 }
-/* line 158, ../_sass/styles.scss */
+/* line 159, ../_sass/styles.scss */
 blockquote p {
   padding: 0.2em 0.4em !important;
   font-size: 0.9em;
 }
 
-/* line 163, ../_sass/styles.scss */
+/* line 164, ../_sass/styles.scss */
 .ohloh {
   display: inline-block;
   padding-top: 0.2em;
 }
 
-/* line 169, ../_sass/styles.scss */
+/* line 170, ../_sass/styles.scss */
 .mainavatar {
   border-radius: 4px;
   margin-top: 1em !important;
@@ -19956,7 +20011,7 @@ blockquote p {
   height: 100px;
 }
 
-/* line 176, ../_sass/styles.scss */
+/* line 177, ../_sass/styles.scss */
 .largewidgettitle {
   font-size: 3em;
   display: block;
