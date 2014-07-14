@@ -17,6 +17,12 @@ destination: ./build
 permalink: /blog/posts/:categories/:title/
 paginate_path: "blog/page:num"
 
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  cache: false
+  gzip: [ text/css, application/javascript ]
+
 authors:
   lxsameer:
     name: Sameer Rahmani
