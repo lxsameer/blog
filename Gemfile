@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem 'compass'
-gem 'semantic-ui-sass'
+#gem 'compass'
+#gem 'semantic-ui-sass'
 gem 'jekyll-categories'
 
 #gem "rb-gsl"
@@ -13,7 +13,8 @@ gem 'ffi'
 gem 'jekyll'
 gem 'jekyll-assets'
 gem 'uglifier'
-
+gem 'coffee-script'
+gem 'sass'
 gem 'rake'
 gem 'puma'
 gem 'rack-contrib'
