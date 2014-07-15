@@ -26,6 +26,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/images
+    - _assets/fonts
 
 authors:
   lxsameer:
