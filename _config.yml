@@ -22,6 +22,7 @@ assets:
   css_compressor: sass
   cache: false
   gzip: [ text/css, application/javascript ]
+  debug: true
   sources:
     - _assets/javascripts
     - _assets/stylesheets
