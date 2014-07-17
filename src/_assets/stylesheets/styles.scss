@@ -176,3 +176,13 @@ blockquote {
 .hidden {
    display: none;
 }
+
+.graph {
+   display: block;
+   height: 5em;
+   div {
+      background: red;
+      margin: 0 2px;
+      display:inline-block;
+   }
+}
