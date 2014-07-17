@@ -1,3 +1,11 @@
+function show_error(msg) {
+    console.log($("#msg").is(":hidden"));
+    if ($("#msg").is(":hidden")) {
+        $("#msg #msgbody").html(msg);
+        $("#msg").fadeIn().delay(4000).fadeOut();
+    }
+}
+
 var API_PREFIX = "http://localhost:3000";
 var API = {
     get: function(url, callback) {
@@ -17,7 +25,7 @@ $(function() {
                 }
             });
         }).fail(function(data) {
-            alert(data);
+            show_error("Can't connect to 'api.lxsameer.com' please try again.");
         });
     });
 });
