@@ -179,9 +179,10 @@ blockquote {
 
 .graph {
    display: block;
-   height: 5em;
+
+   //height: 5em;
    div {
-      background: red;
+      background: #564F8A;
       margin: 0 2px;
       display:inline-block;
    }

@@ -5,8 +5,16 @@ function draw_graph(){
     var graphHeight = $(".graph").parent().height();
     var gutter = 2;
 
-    var barWidth = (graphWidth - 10 - (52 * gutter * 2)) / 52;
-    console.log(barWidth);
+    var col_count = (graphWidth - 10) / (20 + gutter * 2);
+    var rows = parseInt(document.graphdata.length / col_count);
+    if  (document.graphdata.length % col_count > 0) {
+        rows++;
+    }
+
+    console.log(col_count);
+    console.log(rows);
+
+
     var maxBarHeight = 60;
 
     var max_commit = 0;
@@ -24,12 +32,38 @@ function draw_graph(){
 
     var graph = d3.select(".graph")
             .style('width', graphWidth + 'px')
-            //.style('height', graphHeight + 'px')
+            .style('height', ((rows+1) * 20) + 'px')
             .selectAll('div')
             .data(document.graphdata)
             .enter().append("div")
-            .style('width', barWidth + 'px')
-            .style('height', barWidth + 'px');
+            .style('width', '20px')
+            .style('height', '20px')
+            .style('opacity', function(data_element){
+                var x = data_element[1];
+
+                if (x == 0) {
+                    return 0.1;
+                }
+                else if ((0 < x) && (x < 2)) {
+                    return 0.2;
+                }
+                else if  ((2 < x) && (x < 7)) {
+                    return 0.4;
+                }
+                else if  ((7 < x) && (x < 10)) {
+                    return 0.6;
+                }
+                else if  ((10 < x) && (x < 12)) {
+                    return 0.8;
+                }
+                else if  ((12 < x) && (x < 14)) {
+                    return 0.95;
+                }
+
+                else {
+                    return 1;
+                }
+            });
 
 }
 
