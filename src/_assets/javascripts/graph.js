@@ -5,7 +5,7 @@ function draw_graph(){
     var graphHeight = $(".graph").parent().height();
     var gutter = 2;
 
-    var col_count = (graphWidth - 10) / (20 + gutter * 2);
+    var col_count = (graphWidth - 10) / (20 + gutter * 1);
     var rows = parseInt(document.graphdata.length / col_count);
     if  (document.graphdata.length % col_count > 0) {
         rows++;

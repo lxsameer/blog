@@ -183,7 +183,11 @@ blockquote {
    //height: 5em;
    div {
       background: #564F8A;
-      margin: 0 2px;
+      margin: 0 1px;
       display:inline-block;
    }
+}
+
+.tada {
+   display: inline !important;
 }
