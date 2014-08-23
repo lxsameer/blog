@@ -2,7 +2,7 @@
 layout: default
 title: lxsameer's Blog
 ---
-<div class="hidden" id="msg">
+<div class="hide" id="msg">
   <div class="ui grid">
     <div class="column">
       <div class="ui red inverted segment">
@@ -15,26 +15,14 @@ title: lxsameer's Blog
 
 <div class="ui two column stackable grid">
   <div class="eight wide column">
-
-
-    <div class="ui teal segment">
-      <div class="ui stackable two column grid">
-        <div class=" four wide column center aligned">
-          <img src="/images/avatar.jpeg" alt="lxsameer's avatar" class="ui image fluid"/>
-        </div>
-
-        <div class="twelve wide column">
-          <p>
-            My name is Sameer and I'm a senior developer and project manager at Yellowen and a proud member of GNU Project and Karajlug Community. I love programming and I spend most of my time developing Free softwares. I don't like to write a lot of articles or be involved to much into the philosophy of things, Instead I like to do practical things and I let my work speak for itself.
-          </p>
+    <form class="ui relaxed form segment">
+      <div class="ui header">Remind me to ...</div>
+      <div class="ui center aligned grid">
+        <div class="column">
+          <h1>You're not allowed to do this.</h1>
         </div>
       </div>
-    </div>
-
-
-    <form class="ui relaxed form segment" action="">
     </form>
-
   </div>
 
 
@@ -50,7 +38,6 @@ title: lxsameer's Blog
             <div class="ui fluid massive black inverted vertical animated button">
               <div class="hidden content">Download</div>
               <div class="visible content">
-
                 Curriculum vitae
               </div>
             </div>
@@ -66,45 +53,34 @@ title: lxsameer's Blog
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="six wide column">
-        <div class="ui blue inverted center aligned segment" data-remote="true" data-url="/twitter/status">
-          <div class="ui grid center aligned">
-            <div class="row">
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="tweets_count"><i class="loading icon"></i></span>
-                <span>Tweets</span>
+    <br />
+    <div class="ui grid">
+      <div class="row">
+        <div class="column fluid">
+          <div class="ui orange segment" data-remote="true" data-url="/ohloh/status">
+            <div class="ui stackable two column grid center aligned">
+              <div class="row">
+                <div class="column">
+                  <span class="largewidgettitle" data-template data-key="rank"><i class="loading icon"></i></span>
+                  <span>Rank</span>
+                </div>
+                <div class="column">
+                  <span class="largewidgettitle" data-template data-key="level"><i class="loading icon"></i></span>
+                  <span>Level</span>
+                </div>
               </div>
+
+              <div class="row"><div class="column">
+                <span><img src="http://www.ohloh.net/images/ohlohlogo100.png" ></span>
+              </div></div>
             </div>
-
-            <div class="row"><div class="column">
-              <p><i class="large twitter icon"></i></p>
-            </div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ten wide column">
-                <div class="ui orange segment" data-remote="true" data-url="/ohloh/status">
-          <div class="ui stackable two column grid center aligned">
-            <div class="row">
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="rank"><i class="loading icon"></i></span>
-                <span>Rank</span>
-              </div>
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="level"><i class="loading icon"></i></span>
-                <span>Level</span>
-              </div>
-            </div>
-
-            <div class="row"><div class="column">
-              <span><img src="http://www.ohloh.net/images/ohlohlogo100.png" ></span>
-            </div></div>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="ui grid">
       <div class="column">

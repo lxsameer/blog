@@ -1,6 +1,6 @@
 function show_error(msg) {
-    console.log($("#msg").is(":hidden"));
-    if ($("#msg").is(":hidden")) {
+    console.log($("#msg").is(":hide"));
+    if ($("#msg").is(":hide")) {
         $("#msg #msgbody").html(msg);
         $("#msg").fadeIn().delay(4000).fadeOut();
     }
