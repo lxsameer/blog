@@ -23,7 +23,12 @@ body {
 
 a {
    text-decoration: none !important;
+   color: #009FDA;
+   &:hover {
+      color: #00BAFF;
+   }
 }
+
 .sidebar {
   text-align: left;
 }
@@ -73,9 +78,14 @@ a {
 
 .post {
   line-height: 1.5;
-  .post-title {
-    font-size: 1.6em;
-  }
+   .post-title {
+      margin: 0.2em 0 0.5em 0.3em;
+      font-size: 2em;
+   }
+   p {
+      text-indent: 10pt;
+      padding: 0.5em 0;
+   }
 }
 .post code {
   border-radius: 3px;
@@ -134,8 +144,15 @@ footer {
 
 .author {
   h1 {
-    font-size: 1.4em;
+     font-size: 1.7em;
+     margin: 0.2em 0 0.5em;
   }
+
+   p {
+      text-indent: 10pt;
+      line-height: 1.5;
+      padding: 0.5em 0;
+   }
 }
 
 .invert-link, .invert-link:active, .invert-link:visited {
