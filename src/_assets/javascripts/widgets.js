@@ -5,7 +5,7 @@ function show_error(msg) {
     }
 }
 
-var API_PREFIX = "http://localhost:3000";
+var API_PREFIX = "http://api.lxsameer.com";
 var API = {
     get: function(url, callback) {
         return $.getJSON(API_PREFIX + url + "?callback=?", callback);
