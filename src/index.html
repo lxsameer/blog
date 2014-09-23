@@ -15,14 +15,33 @@ title: lxsameer's Blog
 
 <div class="ui two column stackable grid">
   <div class="eight wide column">
-    <form class="ui relaxed form segment">
-      <div class="ui header">Remind me to ...</div>
-      <div class="ui center aligned grid">
-        <div class="column">
-          <h1>You're not allowed to do this.</h1>
+
+    <h1>Latest posts:</h1>
+    <br />
+    <div class="ui stackable items latest">
+
+      {% for post in site.posts limit:3 %}
+      {% assign author = site.authors[post.author] %}
+
+
+      <div class="item" data-url="{{ post.url }}">
+        <div class="content">
+          <div class="meta">{{ post.date | date_to_string }}</div>
+          <div class="name">{{ post.title }}</div>
+          <p class="description">
+            {{ post.excerpt }}
+          </p>
+          <p>. . . .</p>
+        </div>
+        <div class="extra">
+          Read More
         </div>
       </div>
-    </form>
+      {% endfor %}
+    </div>
+
+
+
   </div>
 
 
@@ -30,85 +49,83 @@ title: lxsameer's Blog
 
 
   <div class="eight wide column">
+
+    <div class="ui segment">
+      <div class="ui two column grid">
+      <div class="row">
+        <div class="column">
+          <div class="ui left aligned large header">About Me</div>
+        </div>
+        <div class="column">
+          <div class="ui right aligned small cv header">
+            <a href="https://github.com/lxsameer/Resume/raw/master/SameerRahmani.pdf" alt="lxsameer's CV">
+              Get my CV
+            </a>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      <br />
+      <p>
+        My name is <b>Sameer</b> and I'm a senior developer and at <a href="//yellowen.com">Yellowen</a> and
+        a proud member of <a href="//gnu.org">GNU Project</a>. Also I'm an active <a href="//karajlug.org">Karajluger</a>. I love programming and I spend
+        most of my time developing Free software. I don't like to write a lot of articles or
+        be involved to much into the philosophy of things, Instead I like to do practical things
+        and I let my work speak for itself.
+      </p>
+
+      <div class="ui divider"></div>
+
+      <p>
+        If you found my work interesting:
+      </p>
+      <br />
     <div class="ui two column grid">
       <div class="row">
-        <div class="column">
+        <div class=" column">
 
-          <a href="https://github.com/lxsameer/Resume/raw/master/SameerRahmani.pdf" alt="lxsameer's CV">
-            <div class="ui fluid massive black inverted vertical animated button">
-              <div class="hidden content">Download</div>
-              <div class="visible content">
-                Curriculum vitae
-              </div>
-            </div>
-          </a>
         </div>
 
-        <div class="column">
-          <a href="https://www.gittip.com/lxsameer/" class="massive fluid ui orange button animated vertical" alt='donate to lxsameer'>
-            <div class="hidden content"><i class="large thumbs up outline icon"></i></div>
-            <div class="visible content">
-              Buy me a coffee
-            </div>
+        <div class="right aligned column">
+          <a href="https://www.gittip.com/lxsameer/"alt='donate to lxsameer'>
+              <i class="icon with popup trophy big" data-content="Give me a kudos on openhub"></i>
+          </a>
+          <a href="https://www.gittip.com/lxsameer/"alt='donate to lxsameer'>
+            <i class="icon with popup coffee big" data-content="Buy me a cup of coffee"></i>
           </a>
         </div>
       </div>
     </div>
 
-    <br />
+
+
+
+    </div>
     <div class="ui grid">
       <div class="row">
-        <div class="column fluid">
-
-        </div>
-      </div>
-    </div>
+        <div class="fluid column">
 
 
-    <div class="ui grid">
-      <div class="column">
-        <div class="ui purple inverted center aligned segment" data-remote="true" data-url="/github/status">
-          <div class="ui stackable three column grid center aligned">
-            <div class="row">
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="followers"><i class="loading icon"></i></span>
-                <span>Followers</span>
-              </div>
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="following"><i class="loading icon"></i></span>
-                <span>Following</span>
-              </div>
-              <div class="column">
-                <span class="largewidgettitle" data-template data-key="commits"><i class="loading icon"></i></span>
-                <span>Commits per year</span>
-              </div>
-            </div>
-            <div class="row"><div class="column">
-              <span><i class="big github icon"></i></span>
+          <div class="ui  feed segment activity">
+            <h2 class="ui header">
+              Recent Activity
+            </h2>
+
+            <div class="row"><div class="center aligned column">
+	    <p id="loading"><i id="loadicon" class="icon loading"></i> <span id="msg">Loading . . . </span></p>
+	    <p class="err hide" id="err"><i class="icon remove"></i><a href="#" id="retry" onclick='loadgithub();'>Retry</a></p>
             </div></div>
+
+            <div class="hide" id="atom">
+
+            </div>
           </div>
-        </div>
 
-        <div class="ui red disabled segment">
-          <span><i class="big music icon"></i> I'm not listening to anything right now.</span>
-        </div>
-
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="ui computer only grid" style="display: none !important;">
-  <div class="column">
-    <div class="ui red segment" id="graphcontainer">
-      <div class="graph1">
+	</div>
 
       </div>
     </div>
 
   </div>
 </div>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>

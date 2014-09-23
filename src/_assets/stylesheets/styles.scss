@@ -9,7 +9,7 @@
 }
 html, body {
   background: $BG;
-  color: $darkgray;
+  color: white;
   font-family: 'Exo 2', sans-serif;
 }
 
@@ -207,4 +207,36 @@ blockquote {
 
 .tada {
    display: inline !important;
+}
+
+.latest {
+   .item {
+      width: 100% !important;
+      min-height: inherit !important;
+   }
+}
+
+.err {
+   a {
+      color: #D65A5A;
+   }
+}
+.branch {
+   color: #59BA70;
+}
+
+.marked {
+   color: #554E89;
+}
+.event {
+   line-height: 1.5 !important;
+}
+
+.segment, .items {
+   color: $darkgray;
+}
+
+.activity {
+   height: 50rem;
+   overflow-y: auto;
 }
