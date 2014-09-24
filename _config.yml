@@ -29,6 +29,9 @@ assets:
     - _assets/images
     - _assets/fonts
 
+gems:
+  - jekyll-sitemap
+
 authors:
   lxsameer:
     name: Sameer Rahmani
