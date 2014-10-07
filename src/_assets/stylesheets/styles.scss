@@ -83,19 +83,22 @@ a {
       font-size: 2em;
    }
    p {
-      text-indent: 10pt;
+      //text-indent: 10pt;
       padding: 0.5em 0;
+   }
+   ul {
+      padding-left: 4em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
    }
 }
 .post code {
   border-radius: 3px;
-  background-color: #eeeeec;
   padding: 0.1em 0.2em;
 }
 
 .post pre {
   border-radius: 3px;
-  background-color: #eeeeec;
   padding: 0.2em;
 }
 

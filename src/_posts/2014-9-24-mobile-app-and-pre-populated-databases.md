@@ -45,7 +45,8 @@ You probably are waiting for me to introduce you to the solution, don't you ?
 Ok Here is what I done. I simply created a binary database by serializing my data into a series of
 bytes and separate records using one byte separator. here is a part of my data:
 
-```
+{% highlight python linenos %}
+"""
 00 0c 0f 05 08 64 0b 09 02 64 09 06 03 65 00 0a
 06 0e 0a 64 0c 04 08 64 08 02 06 65 00 05 06 0c
 0d 64 09 01 08 64 09 05 04 65 00 0e 0a 0f 0b 64
@@ -56,16 +57,16 @@ bytes and separate records using one byte separator. here is a part of my data:
 00 06 0d 05 0c 64 07 04 03 64 0b 09 02 65 00 0b
 0e 04 07 64 09 08 01 64 09 06 03 65 00 0a 0b 0b
 0c 64 11 08 09 64 05 03 02 65 00 0e 0a 0b 07 64
-```
+"""
+{% endhighlight %}
 
 As you can see ( probably ) I separate my records using `65` (`e` in `ASCII`). And `64`
 to separate my fields (Since my data in just some numbers it wasn't a problem to use
 separators in alphabet range). With this approach my data shrank to only 350Kb which was
 much smaller. Long story short I parsed my data in javascript like this:
 
-
-```javascript
-    this.parse_bytes = function(data) {
+{% highlight javascript linenos %}
+        this.parse_bytes = function(data) {
         var result = {};
 
         // Parse the first byte as the level field
@@ -91,8 +92,7 @@ much smaller. Long story short I parsed my data in javascript like this:
 
         return result;
     };
-
-```
+{% endhighlight %}
 
 As you see the above code is not even a **well written** Javascript code and it can
 be re-factored to be more efficient but using the above snippet it took only **0.3ms**
