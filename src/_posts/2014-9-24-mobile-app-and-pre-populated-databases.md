@@ -8,14 +8,14 @@ author: lxsameer
 description: Mobile app development and re-populated databases challenge
 ---
 
-In past couple of weeks I was working on Mobile application which was a math related game. As always
+In the past couple of weeks I was working on Mobile application which was a math related game. As always
 I used our beloved [Susanoo](http://github.com/Yellowen/Susanoo) framework for the task which use
 [Apache Cordova](http://cordova.apache.org/) internally.
 
-But I experienced a problem. The Game had a data base with 38,000 records. If you never developed a
-mobile application it may seems odd to you because 38,000 record is not that big a deal. Unfortunately
+But I experienced a problem. The Game had a database with 38,000 records. If you have never developed a
+mobile application, it may seem odd to you because 38,000 records is not that big a deal. Unfortunately
 This number is kind of a big deal for a mobile application. Because the application may run on different
-type of devices with different type of hardware. Long story short **It's a big deal**.
+types of devices with different type of hardware. Long story short **It's a big deal**.
 
 To face this problem I had these choices:
 
@@ -28,21 +28,21 @@ Using **SQLite** and a native **Android** driver a single SQL `SELECT` query to 
 took about 18 seconds on a quad core device (Sony Xperia Z). It was a **disaster**.
 
 **WebSQL** and **IndexedDB** were out of the picture too. Because spending a lot of time on putting
-data from a pre-populated data storage like `JSON` file into these database took bout 30 minutes on
+data from a pre-populated data storage like `JSON` file into these databases took bout 30 minutes on
 the same device. No one likes to wait for 30 minutes for a simple math game.
 
 I had better performance with a single `JSON` file on my device. It was a bit slow but eeeh. But when
-it comes to install the game on single core device. **Ka-BOOOOOOOM** Slower devices couldn't even load the file.
+it comes to install the game on a single core device. **Ka-BOOOOOOOM** Slower devices couldn't even load the file.
 
 So I tried my last resort. I broke the single `JSON` file into smaller piece. The original file was about 10Mb
-and I tried different combination of broke down. For example I broke the file into 38,000 pieces based on
+and I tried different combination of broke down. For example, I broke the file into 38,000 pieces based on
 row IDs or I broke the file into about 300 files based on game levels and so on. The problem with this
 approach was the **SIZE**. Total size of 38,000 records gets about 150Mb. Who want to download a 160Mb
-math game ?
+math game?
 
-You probably are waiting for me to introduce you to the solution, don't you ?
+You probably are waiting for me to introduce you to the solution, don't you?
 
-Ok Here is what I done. I simply created a binary database by serializing my data into a series of
+Ok Here is what have I done. I simply created a binary database by serializing my data into a series of
 bytes and separate records using one byte separator. here is a part of my data:
 
 {% highlight python linenos %}
@@ -60,10 +60,10 @@ bytes and separate records using one byte separator. here is a part of my data:
 """
 {% endhighlight %}
 
-As you can see ( probably ) I separate my records using `65` (`e` in `ASCII`). And `64`
-to separate my fields (Since my data in just some numbers it wasn't a problem to use
+As you can see (probably) I separate my records using `65` (`e` in `ASCII`). And `64`
+to separate my fields (Since my data in just some numbers, it wasn't a problem to use
 separators in alphabet range). With this approach my data shrank to only 350Kb which was
-much smaller. Long story short I parsed my data in javascript like this:
+much smaller. Long story short, I parsed my data in javascript like this:
 
 {% highlight javascript linenos %}
         this.parse_bytes = function(data) {
@@ -95,7 +95,7 @@ much smaller. Long story short I parsed my data in javascript like this:
 {% endhighlight %}
 
 As you see the above code is not even a **well written** Javascript code and it can
-be re-factored to be more efficient but using the above snippet it took only **0.3ms**
+be re-factored to be more efficient, but using the above snippet it took only **0.3ms**
 to load the entire database and fire a query in the same device. It's big isn't it.
 
 If your data is bigger than mine or you have a very complex structure the only thing
