@@ -19,4 +19,8 @@ back when diet finished.
 
 After 3 years of that insident I started *Kyokushin Karate*, one of the most brutal, heavy and
 tough sport possible. Also I was in a diet most of time. I lost weight a lot but as soon as I end
-the dient I gain weight again. I always was 
+the dient I gain weight again. I always was curious why is that ? I try really hard but as soon as
+I ending the diet I gain weight again.
+
+Week ago I found out the truth behind this problem. *Liver* is the most important body part responsible
+for storing extra energy of food as fat, and burning fat and produce energy when body needs it.
