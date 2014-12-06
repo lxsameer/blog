@@ -30,4 +30,8 @@ Most of humans are suffering from a fatty liver in different levels. A fatty liv
 So it can't burn fat correctly, And that's because after a diet people gains weight again. No matter how
 hard they try.
 
-Ok now what's can we do ?
+Ok, now what's can we do ?
+
+First of all, sport training is very helpful for you liver and help you burn more fat. Second of all
+fatty liver have much more fat stored in liver cells and cause huge damage. In order to heal the damaged
+cell there are several drug which you take, For example
