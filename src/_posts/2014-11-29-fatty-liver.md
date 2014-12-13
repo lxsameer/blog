@@ -43,4 +43,15 @@ cell there are several drugs and medicines which you should take, For example:
 * Rosiglitazone
 * Pioglitazone
 
-Using these medicines you can easily heal you liver cells within a 3 month period.
+Using these medicines you can easily heal you liver cells within a 3 month period. Also there is an other
+material which has a really incredible effect. **Silybum marianum** is a kinda rare plant which grows
+mostly in dry places.**Silybum marianum** is one the well known rich sources for **milk thistle**.
+
+Research suggests that milk thistle extracts both prevent and repair damage to the liver from toluene
+and/or xylene. Workers who had been exposed to vapors from toluene and/or xylene for 5–20 years were
+given either a standardized milk thistle extract (80% silymarin) or placebo for 30 days.
+The workers taking the milk thistle extract showed significant improvement in liver function
+tests (ALT and AST) and platelet counts vs. the placebo group.
+
+**LiverGol** is a commercial supplement which contains a great deal of **Silybum marianum**. There isn't
+any known side effect for this supplement. I easily healed my liver using this medicine.
