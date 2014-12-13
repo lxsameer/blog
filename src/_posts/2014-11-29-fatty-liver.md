@@ -34,4 +34,13 @@ Ok, now what's can we do ?
 
 First of all, sport training is very helpful for you liver and help you burn more fat. Second of all
 fatty liver have much more fat stored in liver cells and cause huge damage. In order to heal the damaged
-cell there are several drug which you take, For example
+cell there are several drugs and medicines which you should take, For example:
+
+* Vitamin E
+* Selenium
+* Betaine
+* Metformin
+* Rosiglitazone
+* Pioglitazone
+
+Using these medicines you can easily heal you liver cells within a 3 month period.
