@@ -55,3 +55,6 @@ tests (ALT and AST) and platelet counts vs. the placebo group.
 
 **LiverGol** is a commercial supplement which contains a great deal of **Silybum marianum**. There isn't
 any known side effect for this supplement. I easily healed my liver using this medicine.
+
+I tried to summarize everything and avoid blabbing, So long story short the key to a successful diet is
+**to have a healthy liver**.
