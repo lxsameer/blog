@@ -9,17 +9,9 @@
 }
 html, body {
   background: $BG;
-  color: white;
   font-family: 'Exo 2', sans-serif;
 }
 
-body {
-   width: 100%;
-   height: 100%;
-   position:absolute;
-   margin: 0;
-  //border-top: 3px solid $gray;
-}
 
 a {
    text-decoration: none !important;
@@ -29,9 +21,6 @@ a {
    }
 }
 
-.sidebar {
-  text-align: left;
-}
 
 .left-header {
   h1 {
@@ -50,10 +39,11 @@ a {
 }
 .ui.menu {
   border-radius: 0;
+   margin: 0;
 }
 
 .header-bg {
-  background: url("/images/header.png") 0 0 repeat-x transparent;
+  background: url(header.png) 0 0 repeat-x transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -106,6 +96,11 @@ a {
    min-height: 100%;
 
    position: relative;
+}
+
+.ui.main.container {
+   padding-top: 5em;
+   padding-bottom: 5em;
 }
 
 footer {
@@ -216,6 +211,7 @@ blockquote {
    .item {
       width: 100% !important;
       min-height: inherit !important;
+      cursor: pointer;
    }
 }
 
