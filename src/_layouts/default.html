@@ -80,12 +80,18 @@
   </head>
   <body class="ui inverted green">
     <div class="ui computer tablet only thin sidebar small vertical menu">
-      <div class="header item">
-        <a href="/categories"><i class="reorder icon"></i> Categories</a>
+      <div class="item">
+        <div class="header">
+          <a href="/categories"><i class="grid layout icon"></i> Categories</a>
+        </div>
+        <div class="menu">
+          {% category_list %}
+        </div>
       </div>
-      {% category_list %}
-      <div class="header item">
-        <a href="/tags"><i class="tags icon"></i> Tags</a>
+      <div class="item">
+        <div class="header">
+          <a href="/tags"><i class="tags icon"></i> Tags</a>
+        </div>
       </div>
     </div>
 

@@ -43,17 +43,14 @@ function push_event(result) {
     var repo = result.repo.name;
     var ref = result.payload.ref.split("/");
 
-    var str = "<div class='push event'> " +
-        "<div class='label'><i class='circular cloud upload icon'></i></div> " +
-        "<div class='content'> <div class='date'>" + date_helper(result) + "</div> " +
-        "<div class='summary'>" + link_helper(user) +
-        " pushed to <span class='branch'>" + ref[ref.length -1] + "</span> at " +
-        link_helper(repo) + "</div><div class='extra text'>";
+    var str = "<div class='push item'><i class='circular cloud upload icon'></i>" +
+        "<div class='content'><div class='header'>pushed to <span class='branch'>" + ref[ref.length -1] + "</span> at " +
+        link_helper(repo) + "</div><div class='description'>" + date_helper(result) + "</div></div><div class='list'>";
 
-    result.payload.commits.forEach(function(commit){
-        str = str + "<div><a href='https://www.github.com/" + repo + "/commit/" + commit.sha + "'>" + commit.sha.substr(0, 15) + "</a> " + commit.message + "</div>";
+        result.payload.commits.forEach(function(commit){
+          str = str + "<div class='item'><a href='https://www.github.com/" + repo + "/commit/" + commit.sha + "'>" + commit.sha.substr(0, 15) + "</a> " + commit.message + "</div>";
 
-    });
+        });
 
     str = str + "</div></div>";
     return str;
@@ -64,18 +61,18 @@ function create_event(result){
     var user = result.actor.login;
     var repo = result.repo.name;
 
-    var str = "<div class='create event'>" +
-        "<div class='label'><img  src='" + result.actor.avatar_url + "'></i></div>" +
-        "<div class='content'> <div class='date'>" + date_helper(result) + "</div> " +
-        "<div class='summary'>" + link_helper(user) +
-        " create a new <span class='marked'>" + result.payload.ref_type + "</span> at " + link_helper(repo) + "</div>";
+    var str = "<div class='create item'>" +
+        "<img  class='ui avatar image' src='" + result.actor.avatar_url + "'>" +
+        "<div class='content'> <div class='header'>" +
+        "create a new <span class='marked'>" + result.payload.ref_type + "</span> at " + link_helper(repo) + "</div>" +
+        "<div class='description'>" + date_helper(result) +  "</div><div class='list'>";
     if (result.payload.ref != null) {
         str = str + "<div class='desc'><span class='marked'>" + result.payload.ref + ":</span> " + result.payload.description + "</div>";
     }
     else {
         str = str + "<div class='desc'><span class='marked'>" + repo + ":</span> " + result.payload.description + "</div>";
     }
-    str = str + "</div>";
+    str = str + "</div></div>";
     return str;
 };
 
