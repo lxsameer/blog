@@ -78,7 +78,7 @@
     <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
   </head>
-  <body>
+  <body class="ui inverted green">
     <div class="ui computer tablet only thin sidebar small vertical menu">
       <div class="header item">
         <a href="/categories"><i class="reorder icon"></i> Categories</a>
@@ -90,68 +90,54 @@
     </div>
 
 
-    <div class="ui mobile only thin left  sidebar  wide floating vertical menu">
-      <div class="item"><a href="/"><i class="home icon"></i> Home</a></div>
-      <div class="item"><a href="/blog"><i class="comment icon"></i> Blog</a></div>
-      <!-- <a href="/activities/" class="item"><i class="terminal icon"></i> Activities</a> -->
-      <div class="item"><a href="/categories"><i class="reorder icon"></i> Categories</a></div>
-      <div class="item"><a href="/tags"><i class="tags icon"></i> Tags</a></div>
-      <a class="item" href="/feed/feed.xml"><i class="rss icon"></i> Feed</a>
-      <div class="item"><a  href="http://twitter.com/lxsameer"><i class="large twitter sign icon"></i>Follow me on Twitter</a></div>
-      <div class="item"><a  href="http://github.com/lxsameer"><i class="large github icon"></i>Follow me on Github</a></div>
-      <div class="item"><a  href="https://plus.google.com/+SameerRahmani"><i class="large google plus sign icon"></i>Follow me on Google+</a></div>
-      <div class="item"><a class="toggle button mobile" href="#"><i class="large remove icon"></i> Close</a></div>
-    </div>
-      <div class="ui computer tablet only fluid left labeled inverted menu">
-        <a href="/" class="item"><i class="home icon"></i> Home</a>
+    <div class="pusher">
+
+    <div class="ui computer tablet only inverted main menu">
+      <a href="/" class="item"><i class="home icon"></i> Home</a>
         <a href="/blog/" class="item"><i class="comment icon"></i> Blog</a>
         <!-- <a href="/activities/" class="item"><i class="terminal icon"></i> Activities</a> -->
         <a href="#" class="toggle button computer item"><i class="grid layout icon"></i> Categories</a>
         <a class="item" href="/blog/feed/feed.xml"><i class="rss icon"></i> Feed</a>
 
-        <div class="ui dropdown item">
-          Follow me <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item" href="http://twitter.com/lxsameer"><i class="twitter sign icon"></i> Twitter</a>
-            <a class="item" href="http://github.com/lxsameer"><i class="github icon"></i> Github</a>
-            <a class="item" href="https://plus.google.com/+SameerRahmani"><i class="google plus sign icon"></i> Google+</a>
-          </div>
+        <div class="right menu">
+          <a class="item" href="http://twitter.com/lxsameer"><i class="twitter sign icon"></i></a>
+          <a class="item" href="http://github.com/lxsameer"><i class="github icon"></i></a>
+          <a class="item" href="https://plus.google.com/+SameerRahmani"><i class="google plus sign icon"></i></a>
         </div>
-
-      </div>
-
-    <div class="ui mobile only grid">
-      <div class="ui fluid small inverted menu">
-        <a href="#" class="toggle button mobile item"><i class="reorder icon"></i></a>
-      </div>
     </div>
 
 
+      <div class="ui mobile only grid">
+        <div class="ui fluid small inverted menu">
+          <a href="#" class="toggle button mobile item"><i class="align justify icon"></i></a>
+        </div>
+      </div>
 
-    <div class="ui main container">
-      <div class="stackable ui strechted page grid">
-        <div class="column">
-          {{ content }}
+
+      <div class="ui main container">
+        <div class="stackable ui strechted page grid">
+          <div class="column">
+            {{ content }}
+          </div>
         </div>
       </div>
+      <footer>
+        <div class="ui two column page grid">
+          <div class="row">
+            <div class="column left aligned">
+              <span>© 2012-2015 <a class="invert" href="http://www.lxsameer.com">@lxsameer</a></span>
+            </div>
+            <div class="column right aligned">
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div class="dimmer pusher"></div>
-    <footer>
-      <div class="ui two column page grid">
-        <div class="row">
-          <div class="column left aligned">
-            <span>© 2012-2015 <a class="invert" href="http://www.lxsameer.com">@lxsameer</a></span>
-          </div>
-          <div class="column right aligned">
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <script>
-      $(".ui.dropdown").dropdown();
-      $(".ui.computer.sidebar").sidebar('attach events', '.toggle.button.computer');
-      $(".ui.mobile.sidebar").sidebar({overlay: true}).sidebar('attach events', '.toggle.button.mobile');
+     $(".ui.dropdown").dropdown();
+     $(".ui.computer.sidebar").sidebar('setting', 'transision', 'push').sidebar('attach events', '.toggle.button.computer');
+     $(".ui.mobile.sidebar").sidebar('setting', 'transision', 'push').sidebar('attach events', '.toggle.button.mobile');
      $('.tada').transition('set looping').transition('tada', '600ms');
     </script>
   </body>
