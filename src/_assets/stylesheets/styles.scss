@@ -8,9 +8,10 @@
    margin: 0;
 }
 
-html, body {
-  font-family: 'Exo 2', sans-serif;
-   background: $BG;
+html, body, .pusher {
+   font-family: 'Lato',  sans-serif;
+   background: $BG !important;
+   //font-family: 'Exo 2'
 }
 
 a {
@@ -99,7 +100,7 @@ a {
 }
 
 .maincontainer {
-   min-height: 100%;
+   min-height: 30em;
 
    position: relative;
 }
@@ -233,8 +234,12 @@ blockquote {
 .marked {
    color: #554E89;
 }
-.event {
+.push, .create {
    line-height: 1.5 !important;
+   color: $darkgray;
+   .description, .desc {
+      font-size: 0.8em;
+   }
 }
 
 .segment, .items {

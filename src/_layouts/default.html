@@ -74,8 +74,7 @@
 
     {% stylesheet application %}
     {% javascript application %}
-
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
   </head>
   <body class="ui inverted green">
@@ -96,13 +95,14 @@
     </div>
 
 
-    <div class="pusher">
+    <div class="ui inverted green pusher">
 
     <div class="ui computer tablet only inverted main menu">
       <a href="/" class="item"><i class="home icon"></i> Home</a>
         <a href="/blog/" class="item"><i class="comment icon"></i> Blog</a>
         <!-- <a href="/activities/" class="item"><i class="terminal icon"></i> Activities</a> -->
         <a href="#" class="toggle button computer item"><i class="grid layout icon"></i> Categories</a>
+        <a href="/portfolio/" class="item"><i class="trophy icon"></i> Portfolio</a>
         <a class="item" href="/blog/feed/feed.xml"><i class="rss icon"></i> Feed</a>
 
         <div class="right menu">
@@ -141,10 +141,49 @@
     </div>
 
     <script>
-     $(".ui.dropdown").dropdown();
+     //$(".ui.dropdown").dropdown();
      $(".ui.computer.sidebar").sidebar('setting', 'transision', 'push').sidebar('attach events', '.toggle.button.computer');
      $(".ui.mobile.sidebar").sidebar('setting', 'transision', 'push').sidebar('attach events', '.toggle.button.mobile');
+     $('.special.cards .image').dimmer({
+         on: 'hover'
+     });
      $('.tada').transition('set looping').transition('tada', '600ms');
+    </script>
+
+    <script id="push-template" type="x-tmpl-mustache">
+      <div class="push item">
+        <img class="ui avatar image" src="{% asset_path avatar.jpeg %}"/>
+        <div class="content">
+          <div class="header">
+            Pushed to <span class="branch"><div class="ui mini label">[[ branch ]]</div></span> at <a href="https://www.github.com/[[ repo ]]">[[ repo ]]</a>
+          </div>
+          <div class="description">[[ date ]]</div>
+        </div>
+        <div class="list">
+        [[#commits]]
+          <div class="item">
+            <a href="https://www.github.com/[[ repo ]]/commit/[[ sha ]]"><span class="ui [[color ]] tiny label">[[ short_sha ]]</span> </a><spen class="desc">  [[ message ]] </spen>
+          </div>
+        [[/commits]]
+        </div>
+      </div>
+    </script>
+
+    <script id="create-template" type="x-tmpl-mustache">
+      <div class="create item">
+     <img class="ui avatar image" src="{% asset_path avatar.jpeg %}"/>
+        <div class="content">
+          <div class="header">
+            Created a new [[ type ]] at <a href="https://www.github.com/[[ repo ]]">[[ repo ]]</a>
+          </div>
+          <div class="description">[[ date ]]</div>
+        </div>
+        <div class="list">
+          <div class="item">
+            <div class='desc'><div class="ui tiny [[ color ]] label">[[ ref ]]</div> [[ desc ]] </div>
+          </div>
+        </div>
+      </div>
     </script>
   </body>
 </html>
