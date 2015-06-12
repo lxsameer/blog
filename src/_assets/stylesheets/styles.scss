@@ -10,8 +10,17 @@
 
 html, body, .pusher {
    font-family: 'Lato',  sans-serif;
-   background: $BG !important;
    //font-family: 'Exo 2'
+}
+
+.pusher {
+   &.primary {
+      background: $BG !important;
+   }
+
+   &.secondary {
+      background: $SECONDARY_BG !important;
+   }
 }
 
 a {
