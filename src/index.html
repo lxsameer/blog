@@ -63,32 +63,27 @@ body_class: primary
 
 
 
-          <div class="ui segment">
-            <div class="ui two column grid">
-              <div class="row">
-                <div class="column">
-                  <div class="ui left aligned large header">About Me</div>
-                </div>
-                <div class="column">
-                  <div class="ui right aligned small cv header">
-                    <a class="ui small green button"href="https://github.com/lxsameer/Resume/raw/master/SameerRahmani.pdf" alt="lxsameer's CV">
-                      My CV
-                    </a>
-                  </div>
-
-                </div>
-              </div>
+          <div class="ui clearing segment">
+            <div class="ui left floated large header">
+              <img src="{% asset_path avatar.jpeg %}" alt="" class="ui circular image" />
+              About Me
             </div>
 
+            <div class="ui right aligned small cv header">
+              <a class="ui small green button" href="http://dl.lxsameer.com/CV/SameerRahmani.pdf" alt="lxsameer's CV">
+                My CV
+              </a>
+            </div>
+
+            <br />
             <p>
               My name is <b>Sameer</b> and I'm a senior developer and at <a href="//yellowen.com">Yellowen</a> and
-              a proud member of <a href="//gnu.org">GNU Project</a>. Also I'm an active <a href="//karajlug.org">Karajluger</a>. I love programming and I spend
+              a proud member of <a href="//gnu.org">GNU Project</a>. Also I'm an active <a href="//karajlug.org">Karajluger</a>. I <i class="heart icon pink"></i> programming and I spend
               most of my time developing Free software. I don't like to write a lot of articles or
               be involved to much into the philosophy of things, Instead I like to do practical things
               and I let my work speak for itself.
             </p>
           </div>
-
         </div>
       </div>
 
@@ -107,7 +102,7 @@ body_class: primary
               <div class="row">
                 <div class=" column">
                   <a href="https://www.openhub.net/accounts/lxsameer" class="ui fluid button blue">
-                    <i class="icon with popup trophy big" data-content="Give me a kudos on openhub"></i>
+                    <i class="icon with popup trophy" data-content="Give me a kudos on openhub"></i>
                     Give me kudos
                   </a>
 
@@ -115,7 +110,7 @@ body_class: primary
 
                 <div class="right aligned column">
                   <a href="https://www.gittip.com/lxsameer/" class="ui teal fluid button" alt='donate to lxsameer'>
-                    <i class="icon with popup paypal card big" data-content="My laptop is very old. Help me buy a new one."></i>
+                    <i class="icon with popup paypal card" data-content="My laptop is very old. Help me buy a new one."></i>
                     I need a laptop
                   </a>
                 </div>
