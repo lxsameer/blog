@@ -259,3 +259,11 @@ blockquote {
    height: 50rem;
    overflow-y: auto;
 }
+
+p {
+   code {
+      background: #DDDDDB;
+      padding: 0.1rem 0.4rem;
+      font-size: 0.9em;
+   }
+}
