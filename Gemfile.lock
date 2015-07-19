@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/dtao/safe_yaml.git
+  revision: 4c420f687ea5c19a8f815f272b29bf45f64fe958
+  specs:
+    safe_yaml (1.0.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -73,7 +79,6 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.1.2)
-    safe_yaml (1.0.3)
     sass (3.3.14)
     sprockets (2.12.1)
       hike (~> 1.2)
@@ -110,5 +115,9 @@ DEPENDENCIES
   rake
   rb-fsevent
   rb-inotify
+  safe_yaml!
   sass
   uglifier
+
+BUNDLED WITH
+   1.10.5

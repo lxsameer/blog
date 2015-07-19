@@ -47,3 +47,69 @@ rake site_framework:install:migrations
 That's it.
 
 ## Usage
+**SiteFramework** provides to solution to multi-site support.
+
+In both solution you have to add a migration for your tables and
+make them domain aware (ActiveRecord Only). e.g in your migration:
+
+```ruby
+# Make posts table domain aware
+domain_aware(:posts)
+```
+
+If you're using **Mongoid** just add a reference to **SiteFramework::Domain** in your model.
+
+When a request arrives to the Rails application `SiteFramework` will add three different
+methods to `Rails.application`.
+
+* **domain**: An instance of `SiteFramework::Domain` model which refer to current domain of
+the request
+* **domain_name**: Current domain as string.
+* **Site**: An instance of `SiteFramework::Site` model which refer to current site.
+
+
+### A) Rack middleware:
+Simply add `SiteFramework::Middleware` to your middleware stack.
+
+### B) Constrants
+Just use `sites` DSL in your `routes.rb`. e.g:
+
+```ruby
+Rails.application.routes.draw do
+
+  # Share routes
+  get 'home/index'
+
+  # All the routes defined in this section will be domain aware.
+  sites(self) do
+    root 'home#index'
+  end
+
+  default_site(self) do
+    # routs for default site
+  end
+end
+```
+Note: You can provide default domains for **SiteFramework** via an
+initializer like this:
+
+```ruby
+SiteFramework.setup do |config|
+
+  config.default_domains = ['localhost', 'example.com']
+
+end
+```
+
+**Personally I prefer this (B) option since it's more Railish.**
+
+### Model Concern
+**SiteFramework** provides an **ActiveSupport** concern which transparently
+makes your models aware of the current **Site** and **Domain**. By includeing
+`SiteFramework::DomainAware` into your model, default scope of your model will
+change to return only records which belongs to current **Site**.
+
+This way you can use external gems with your multi-site application easily.
+All you have to do is to open there models and include the given concern.
+
+Piece of cake. right?
