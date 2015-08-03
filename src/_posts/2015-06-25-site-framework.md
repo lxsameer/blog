@@ -113,3 +113,18 @@ This way you can use external gems with your multi-site application easily.
 All you have to do is to open there models and include the given concern.
 
 Piece of cake. right?
+
+## Models
+
+**SiteFramework** comes with a sets of models to help you build you application
+easily.
+
+* **Domain**: This model stores all the models that should be serviced via the
+              application.
+	      
+* **Site**:   Holds each site instance configuration.
+
+This is really streight forward. To check out the fields of these two model take
+a look at the migrations that are copied into you main application.
+
+Have fun. :)
