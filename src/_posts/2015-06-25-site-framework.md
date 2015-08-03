@@ -2,8 +2,8 @@
 title: Serving multiple sites via same Rails application
 layout: post
 date: 2015-06-20 14:02
-categories: ElasticSearch
-tags: ElasticSearch
+categories: Ruby Rails
+tags: site_framework
 author: lxsameer
 description: Serving multiple sites via same Rails application
 ---
@@ -40,10 +40,9 @@ gem 'site_framework'
 and after installing your project dependencies using `bundle install` command. Install
 **SiteFramework** migrations like:
 
-```bash
+```
 rake site_framework:install:migrations
 ```
-
 That's it.
 
 ## Usage
