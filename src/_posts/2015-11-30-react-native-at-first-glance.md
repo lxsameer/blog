@@ -1,11 +1,11 @@
 ---
 layout: post
-title: ReactNative at first glance
+title: A month with ReactNative
 date: 2015-11-30 20:38
 categories: Javascript
 tags: ReactNative
 author: lxsameer
-description: ReactNative at first glance
+description: A month with ReactNative
 ---
 
 [Reactnative](https://facebook.github.io/react-native/) is an other try to bring modern web
@@ -49,7 +49,7 @@ every questions. It may be young but I don't see any future for this community. 
 got fixed by community.
 
 ## Summary
-I found **ReactNative** fastinating and awesome. I'm happy with it and I'll use it almost always. But I'll never
+I found **ReactNative** fascinating and awesome. I'm happy with it and I'll use it almost always. But I'll never
 contribute to **ReactNative** again. It's not worth the time it took to get your code into main repository.
 
 **ReactNative** development process showed me why facebook is not a successful company in introducing new technologies to the
