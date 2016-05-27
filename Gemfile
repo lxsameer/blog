@@ -6,9 +6,9 @@ gem 'jekyll-categories'
 
 #gem "rb-gsl"
 #gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-gem 'rb-fsevent'
-gem 'rb-inotify'
-gem 'ffi'
+#gem 'rb-fsevent'
+#gem 'rb-inotify'
+#gem 'ffi'
 
 gem 'jekyll'
 gem 'jekyll-assets'
