@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>lxsameer\'s Blog</title>
+    <link>http://lxsameer.com</link>
+    <description>A publication about my life and the world around me</description>
+    <copyright>copyright 2010-2014 @lxsameer</copyright>
+    <pubDate>Sun, 31 Jan 2016 17:38:00 -0800</pubDate>
+    <item>
+      <title>JS MVC framework syndrome</title>
+      <link>http://lxsameer.com/blog/posts/javascript/why_should_not_use_js_MVC_everwhere/</link>
+      <description>&lt;p&gt;It&amp;#39;s been several years since first &lt;strong&gt;Javascript&lt;/strong&gt; MVC framework born and there are
+plenty of them fooling around the world. I use many of them including these famous frameworks:&lt;/p&gt;
+</description>
+      <pubDate>Sun, 31 Jan 2016 17:38:00 -0800</pubDate>
+      <guid>http://lxsameer.com/blog/posts/javascript/why_should_not_use_js_MVC_everwhere/</guid>
+      <dc:date>2016-01-31T17:38:00-08:00</dc:date>
+    </item>
+    <item>
+      <title>Faalis v2</title>
+      <link>http://lxsameer.com/blog/posts/ruby/rails/faalis/faalis-2/</link>
+      <description>&lt;p&gt;It&amp;#39;s been about a year since we started working on the second major version of
+&lt;a href=&quot;http://faalis.io&quot;&gt;Faalis&lt;/a&gt; and finally we released v2 yesterday. This release introduce
+a complete set of new features something near a rewrite.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 21 Dec 2015 21:32:00 -0800</pubDate>
+      <guid>http://lxsameer.com/blog/posts/ruby/rails/faalis/faalis-2/</guid>
+      <dc:date>2015-12-21T21:32:00-08:00</dc:date>
+    </item>
+    <item>
+      <title>A month with ReactNative</title>
+      <link>http://lxsameer.com/blog/posts/javascript/react-native-at-first-glance/</link>
+      <description>&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react-native/&quot;&gt;Reactnative&lt;/a&gt; is an other try to bring modern web
+into mobile application development world. It follows a much brilliant way than previous tries
+like &lt;a href=&quot;https://cordova.apache.org/&quot;&gt;Cordova&lt;/a&gt; or other similar software. &lt;strong&gt;ReactNative&lt;/strong&gt; applications
+run a javascript engine on thread and execute the application js code on that thread and render
+the result in main thread. This simple idea ( it&amp;#39;s much complicated than this, but for the sake of
+simplicity I won&amp;#39;t get to it ) allows us to use native platform components via javascript interact with
+them much easier.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 30 Nov 2015 20:38:00 -0800</pubDate>
+      <guid>http://lxsameer.com/blog/posts/javascript/react-native-at-first-glance/</guid>
+      <dc:date>2015-11-30T20:38:00-08:00</dc:date>
+    </item>
+    <item>
+      <title>Serving multiple sites via same Rails application</title>
+      <link>http://lxsameer.com/blog/posts/ruby/rails/site-framework/</link>
+      <description>&lt;p&gt;If you&amp;#39;re a &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt; developer you probably know about its wonderful &lt;a href=&quot;https://docs.djangoproject.com/en/1.8/ref/contrib/sites/&quot;&gt;sites framework&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 20 Jun 2015 14:02:00 -0700</pubDate>
+      <guid>http://lxsameer.com/blog/posts/ruby/rails/site-framework/</guid>
+      <dc:date>2015-06-20T14:02:00-07:00</dc:date>
+    </item>
+    <item>
+      <title>ElasticSearch &amp; 'Group By'</title>
+      <link>http://lxsameer.com/blog/posts/elasticsearch/group-by-in-elasticsearch/</link>
+      <description>&lt;p&gt;&lt;a href=&quot;https://www.elastic.co/&quot;&gt;ElasticSearch&lt;/a&gt; is the best Opensource search engine out there in the wild in my opinion. If
+your not familiar with it, I highly recommend you to checkout &lt;a href=&quot;http://joelabrahamsson.com/elasticsearch-101/&quot;&gt;this awesome tutorial&lt;/a&gt;
+and get start with &lt;a href=&quot;https://www.elastic.co/&quot;&gt;ElasticSearch&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 20 Jun 2015 14:02:00 -0700</pubDate>
+      <guid>http://lxsameer.com/blog/posts/elasticsearch/group-by-in-elasticsearch/</guid>
+      <dc:date>2015-06-20T14:02:00-07:00</dc:date>
+    </item>
+    <item>
+      <title>Fatty Liver</title>
+      <link>http://lxsameer.com/blog/posts/life/fatty-liver/</link>
+      <description>&lt;p&gt;Years ago I was a professional basketball player, playing the point guard. Some day
+my foot broke in a match and I stayed at home for about 6 month. I those days I thought
+eating more food equal to recovering faster from injury ( Yeah I know I was young ).
+Before the injury I was about 73Kg, and after the injury I turned 117Kg ( Wow I knooww).&lt;/p&gt;
+</description>
+      <pubDate>Sat, 29 Nov 2014 00:23:00 -0800</pubDate>
+      <guid>http://lxsameer.com/blog/posts/life/fatty-liver/</guid>
+      <dc:date>2014-11-29T00:23:00-08:00</dc:date>
+    </item>
+    <item>
+      <title>Mobile Apps &amp; pre-populated databases</title>
+      <link>http://lxsameer.com/blog/posts/mobiledev/mobile-app-and-pre-populated-databases/</link>
+      <description>&lt;p&gt;In the past couple of weeks I was working on Mobile application which was a math related game. As always
+I used our beloved &lt;a href=&quot;http://github.com/Yellowen/Susanoo&quot;&gt;Susanoo&lt;/a&gt; framework for the task which use
+&lt;a href=&quot;http://cordova.apache.org/&quot;&gt;Apache Cordova&lt;/a&gt; internally.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 24 Sep 2014 22:41:00 -0700</pubDate>
+      <guid>http://lxsameer.com/blog/posts/mobiledev/mobile-app-and-pre-populated-databases/</guid>
+      <dc:date>2014-09-24T22:41:00-07:00</dc:date>
+    </item>
+    <item>
+      <title>I'm back</title>
+      <link>http://lxsameer.com/blog/posts/life/im-back/</link>
+      <description>&lt;p&gt;It&amp;#39;s been a long time since I deactivated my blog to improve its web application and use it again. But I was too busy with my other works and I can&amp;#39;t spend much time on &lt;a href=&quot;https://github.com/Yellowen/ultra_blog&quot;&gt;ultra blog&lt;/a&gt;. So I decided to create a simple and temporary blog to share some of my opinions and experiences with others, For that purpose I chose &lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt; to create a static generated weblog. I&amp;#39;m completely satisfied with &lt;strong&gt;Jekyll&lt;/strong&gt; since it written in &lt;strong&gt;Ruby&lt;/strong&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 27 Apr 2013 17:38:00 -0700</pubDate>
+      <guid>http://lxsameer.com/blog/posts/life/im-back/</guid>
+      <dc:date>2013-04-27T17:38:00-07:00</dc:date>
+    </item>
+    <dc:date>2016-01-31T17:38:00-08:00</dc:date>
+  </channel>
+</rss>

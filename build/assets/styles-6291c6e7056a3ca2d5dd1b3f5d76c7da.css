@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body, .pusher {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.pusher.primary {
+  background: #efefef !important; }
+.pusher.secondary {
+  background: #efefef !important; }
+
+a {
+  text-decoration: none !important;
+  color: #009FDA; }
+  a:hover {
+    color: #00BAFF; }
+
+.ui.sidebar.active {
+  visibility: visible; }
+
+.left-header h1 {
+  font-size: 1.6em; }
+.left-header h2 {
+  font-size: 1.4em; }
+.left-header p {
+  font-size: 1.2; }
+
+.ui.menu {
+  border-radius: 0;
+  margin: 0; }
+
+.header-bg {
+  background: url(header.png) 0 0 repeat-x transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  display: block; }
+
+.center-image {
+  margin: 1em auto; }
+
+.brand {
+  padding-top: 8em;
+  border-right: 1px dotted #d9d9d9; }
+  .brand h1 {
+    font-size: 1.3em; }
+
+.post {
+  line-height: 1.5; }
+  .post .post-title {
+    margin: 0.2em 0 0.5em 0.3em;
+    font-size: 2em; }
+  .post p {
+    padding: 0.5em 0; }
+  .post ul {
+    padding-left: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+
+.post code {
+  border-radius: 3px;
+  padding: 0.1em 0.2em; }
+
+.post pre {
+  border-radius: 3px;
+  padding: 0.2em; }
+
+.maincontainer {
+  min-height: 30em;
+  position: relative; }
+
+.ui.main.container {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+footer {
+  clear: both;
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: #333;
+  color: #eee; }
+  footer .column {
+    padding: 0.5em 0; }
+    footer .column h1 {
+      margin-bottom: 0 !important; }
+    footer .column span {
+      font-size: 0.85em !important;
+      color: #b9b9b9 !important; }
+      footer .column span a {
+        color: white; }
+
+.ui.label {
+  text-transform: capitalize; }
+
+.fsegment {
+  font-size: 0.8rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.author h1 {
+  font-size: 1.7em;
+  margin: 0.2em 0 0.5em; }
+.author p {
+  text-indent: 10pt;
+  line-height: 1.5;
+  padding: 0.5em 0; }
+
+.invert-link, .invert-link:active, .invert-link:visited {
+  color: #ddd; }
+
+.invert-link:hover {
+  color: white !important; }
+
+blockquote {
+  background: #efefef;
+  border-radius: 3px;
+  border: 1px solid #eeeeee; }
+  blockquote p {
+    padding: 0.2em 0.4em !important;
+    font-size: 0.9em; }
+
+.ohloh {
+  display: inline-block;
+  padding-top: 0.2em; }
+
+.mainavatar {
+  border-radius: 4px;
+  margin-top: 1em !important;
+  width: 100px;
+  height: 100px; }
+
+.largewidgettitle {
+  font-size: 3em;
+  display: block; }
+
+.hide {
+  display: none; }
+
+.graph {
+  display: block; }
+  .graph div {
+    background: #564F8A;
+    margin: 0 1px;
+    display: inline-block; }
+
+.tada {
+  display: inline !important; }
+
+.latest .item {
+  width: 100% !important;
+  min-height: inherit !important;
+  cursor: pointer; }
+
+.err a {
+  color: #D65A5A; }
+
+.branch {
+  color: #59BA70; }
+
+.marked {
+  color: #554E89; }
+
+.push, .create {
+  line-height: 1.5 !important;
+  color: #333333; }
+  .push .description, .push .desc, .create .description, .create .desc {
+    font-size: 0.8em; }
+
+.segment, .items {
+  color: #333333; }
+
+.activity {
+  height: 50rem;
+  overflow-y: auto; }
+
+p code {
+  background: #DDDDDB;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.9em; }

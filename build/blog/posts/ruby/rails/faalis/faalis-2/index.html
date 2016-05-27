@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Faalis v2</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <meta name="google-site-verification" content="JuEQr3co-5tzeF_7863YbTPjQLuaM6tmbbzNFa-8C6U" />
+    <meta name="twitter:card" content="A publication about my life.">
+    <meta name="twitter:site" content="@lxsameer">
+    <meta name="twitter:creator" content="@lxsameer">
+
+    
+    <meta name="twitter:title" content="Faalis v2">
+    
+    
+    <meta name="twitter:url" content="http://lxsameer.com/blog/posts/ruby/rails/faalis/faalis-2/">
+    
+    
+    <meta name="twitter:description" content="Faalis v2">
+    
+    
+    <meta name="twitter:image:src" content="http://lxsameer.com/images/logo.png">
+    
+
+
+    <meta content="" property="og:site_name">
+    
+    <meta content="Faalis v2" property="og:title">
+    
+    
+    <meta content="article" property="og:type">
+    
+    
+    <meta content="Faalis v2" property="og:description">
+    
+    
+    <meta content="http://lxsameer.com/blog/posts/ruby/rails/faalis/faalis-2/" property="og:url">
+    
+    
+    <meta content="2015-12-21T21:32:00-08:00" property="article:published_time">
+    
+    
+    <meta content="http://lxsameer.com/images/high-logo.png" property="og:image">
+    
+    
+    
+    <meta content="ruby" property="article:section">
+    
+    
+    
+    
+    <meta content="Gem" property="article:tag">
+    
+    <meta content="Faalis" property="article:tag">
+    
+    
+
+    <link rel="stylesheet" href="/assets/semantic-f98d054268e7c82acf6830a37919f359.css">
+<link rel="stylesheet" href="/assets/highlights-f14b3917e3c12f98b82b0bec1a67b717.css">
+<link rel="stylesheet" href="/assets/styles-6291c6e7056a3ca2d5dd1b3f5d76c7da.css">
+<link rel="stylesheet" href="/assets/application-7783929a99ec797853593b61150ee6e6.css">
+    <script src="/assets/lib/jquery-536b2dc81ab12d0082c7651612b50aa5.js"></script>
+<script src="/assets/lib/moment-595793a2969de7e6a68cd3e605457df7.js"></script>
+<script src="/assets/lib/mustache-6403e2b8718abaa09f3df612ef3bcdbb.js"></script>
+<script src="/assets/lib/semantic-649d890a33ada9ba8c16e9ab25bd59f7.js"></script>
+<script src="/assets/widgets-74fab660756865fee8654d54349af918.js"></script>
+<script src="/assets/application-befa051770aa2d4b11b4936a8e587f3f.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+  </head>
+  <body>
+    <div class="ui computer tablet only sidebar small vertical menu">
+      <div class="item">
+        <div class="header">
+          <a href="/categories"><i class="grid layout icon"></i> Categories</a>
+        </div>
+        <div class="menu">
+          <div class='item'><a href='/categories/elasticsearch/'><div class='ui small purple image label'>Elasticsearch<div class='detail'>1</div></div></a></div>
+<div class='item'><a href='/categories/faalis/'><div class='ui small black image label'>Faalis<div class='detail'>1</div></div></a></div>
+<div class='item'><a href='/categories/javascript/'><div class='ui small blue image label'>Javascript<div class='detail'>2</div></div></a></div>
+<div class='item'><a href='/categories/life/'><div class='ui small blue image label'>Life<div class='detail'>2</div></div></a></div>
+<div class='item'><a href='/categories/mobiledev/'><div class='ui small teal image label'>Mobiledev<div class='detail'>1</div></div></a></div>
+<div class='item'><a href='/categories/rails/'><div class='ui small red image label'>Rails<div class='detail'>2</div></div></a></div>
+<div class='item'><a href='/categories/ruby/'><div class='ui small orange image label'>Ruby<div class='detail'>2</div></div></a></div>
+
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">
+          <a href="/tags"><i class="tags icon"></i> Tags</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui mobile only left sidebar wide thin floating vertical menu">
+      <a class="item" href="/"><i class="home icon"></i> Home</a>
+      <a class="item" href="/blog"><i class="comment icon"></i> Blog</a>
+      <!-- <a href="/activities/" class="item"><i class="terminal icon"></i> Activities</a> -->
+      <a class="item" href="/categories"><i class="grid layout icon"></i> Categories</a>
+      <a href="/portfolio/" class="item"><i class="trophy icon"></i> Portfolio</a>
+
+      <a class="item" href="/tags"><i class="tags icon"></i> Tags</a>
+      <a class="item" href="/feed/feed.xml"><i class="rss icon"></i> Feed</a>
+      <a class="item"  href="http://twitter.com/lxsameer"><i class="large twitter sign icon"></i>Follow me on Twitter</a>
+      <a class="item"  href="http://github.com/lxsameer"><i class="large github icon"></i>Follow me on Github</a>
+      <a class="item"  href="https://plus.google.com/+SameerRahmani"><i class="large google plus sign icon"></i>Follow me on Google+</a>
+      <a class="item"  href="https://ir.linkedin.com/in/lxsameer"><i class="large linkedin icon"></i>Follow me on LinkedIn</a>
+      <a class="item toggle button mobile" href="#"><i class="large remove icon"></i> Close</a>
+    </div>
+
+
+
+    <div class="primary pusher">
+
+
+
+    <div class="ui fluid grid">
+      <div class="row computer tablet only">
+        <div class="column">
+          <div class="ui blue secondary inverted main menu">
+            <a href="/" class="item"><i class="home icon"></i> Home</a>
+            <a href="/blog/" class="item"><i class="comment icon"></i> Blog</a>
+            <!-- <a href="/activities/" class="item"><i class="terminal icon"></i> Activities</a> -->
+            <a href="#" class="toggle button computer item"><i class="grid layout icon"></i> Categories</a>
+            <a href="/portfolio/" class="item"><i class="trophy icon"></i> Portfolio</a>
+            <a class="item" href="/blog/feed/feed.xml"><i class="rss icon"></i> Feed</a>
+
+            <div class="right menu">
+              <a class="item" href="http://twitter.com/lxsameer"><i class="big twitter sign icon"></i></a>
+              <a class="item" href="http://github.com/lxsameer"><i class="big github icon"></i></a>
+              <a class="item" href="https://plus.google.com/+SameerRahmani"><i class="big google plus sign icon"></i></a>
+              <a class="item"  href="https://ir.linkedin.com/in/lxsameer"><i class="large linkedin icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mobile only">
+        <div class="column">
+          <div class="ui fluid big blue inverted menu">
+            <a href="#" class="toggle button mobile item"><i class="content big icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+      <div class="ui main container">
+        <div class="stackable ui strechted page grid">
+          <div class="column">
+            
+<div class="post row">
+  <div class="ui teal top attached segment">
+    <br class="mobile only"/>
+    <h1 class="post-title"><a href="">Faalis v2</a></h1>
+    <div class="ui teal top right attached  label"><i class="large time icon"></i>21 Dec 2015</div>
+
+    <div class="post">
+      <p>It&#39;s been about a year since we started working on the second major version of
+<a href="http://faalis.io">Faalis</a> and finally we released v2 yesterday. This release introduce
+a complete set of new features something near a rewrite.</p>
+
+<h2>What changed</h2>
+
+<p>Let&#39;s take a look at changes in compare to previous versions.</p>
+
+<h3>Dashboard Interface &amp; Turbolinks</h3>
+
+<p>Maybe the most important change introduced in v2.x in compare to 0.x, and 1.x is the
+<strong>new dashboard</strong>. Previous dashboard system was a javascript application based on
+AngularJS library. At first when we developed the old dashboard, world still did not
+find out about the dark side of AngularJS and every one was so happy with it, but after
+a while every one including us begin to realise that AngularJS 1.x has some very serious
+issues. For example &quot;angular world&quot; was a huge pain in the ass. Long story short we decided
+to not to continue with AngularJS. Our most important reasons were:</p>
+
+<ul>
+<li>Handling two different application code base takes too much energy.</li>
+<li>Our assets got too big.</li>
+<li>We ended up with a giant JS application which was too slow.</li>
+<li>The damn &quot;Angular World&quot; which caused us lots of work and pain.</li>
+<li>JS application got complex and after a while debugging it was so hard</li>
+<li>And finally <a href="https://github.com/rails/turbolinks">Turbolinks</a> rocks.</li>
+</ul>
+
+<p>The above reasons were enough to drive me crazy. In that time I suddenly remembered something
+important by watching <a href="http://david.heinemeierhansson.com/">@dhh</a> keynote
+<a href="https://www.youtube.com/watch?v=KJVTM7mE1Cc">talk</a> on RailsConf 2015. I was totally forgot about
+how awesome <a href="https://github.com/rails/turbolinks">Turbolinks</a> can be. In the past I was ignorant about
+<strong>Turbolinks</strong> simply because it was&#39;nt that good at the time being.</p>
+
+<p>After spending a little time to update my knowledge about Turbolinks, I get to work and
+created a very basic prototype of <strong>Faalis</strong> dashboard to see how can it be helpful to us.
+After a while it was clear to me as the blue sky that <strong>IT&#39;S WHAT WE NEEDED</strong>.</p>
+
+<p>Thanks to Turbolinks we get ride of our huge AngularJS application and replaced it
+with very small amount of javascript code. Our Assets size reduced by about 95% specially
+in bigger projects. And maaaan it&#39;s fast too. But the most awesome experience with turbolinks
+in compare to &quot;AngularJS&quot; or any other similar frameworks is that it&#39;s <strong>railsy</strong> you just
+write ruby and js code in rails fasions nothing special. This feels great.</p>
+
+<p>It <strong>Faalis 2.x</strong>, we re-write dashboard subsystem entirely. Now:</p>
+
+<ul>
+<li>It&#39;s much smaller</li>
+<li>It&#39;s much faster</li>
+<li>It&#39;s easier to work with dashboard UI API</li>
+<li>Generate code for each resource reduced to minimum.</li>
+<li>Everything is in the same Rails application code base.</li>
+</ul>
+
+<p>New dashboard feels great.</p>
+
+<h3>Dashboard Interface &amp; AdminLTE</h3>
+
+<p>Good folks at <a href="http://www.almsaeedstudio.com">almsaeedstudio</a> create a very nice piece of UI for dashboard
+interfaces aka <a href="https://almsaeedstudio.com/preview">AdminLTE</a> with free software license. It&#39;s beautiful and awesome
+and uses <strong>bootstrap</strong> which is pretty popular. So we decided to use <strong>AdminLTE</strong> instead of our UI interface.</p>
+
+<p>At first we cloned the <strong>AdminLTE</strong> and made somechanges to use in <strong>Faalis</strong> but after a while we did the right
+thing and created a gem called <a href="https://github.com/Yellowen/admin_lte-rails">admin_lte-rails</a> (Don&#39;t ask about the name,
+it&#39;s awful I know, but it&#39;s history :wink:) which uses fantastic <a href="http://rails-assets.org">rails-assets.org</a> to provide
+an automatic build and SCSS version of <strong>AdminLTE</strong> with <strong>RTL</strong> layout support ( which vanilla AdminLTE does not support).
+This way we can always be up2date and keep up with <strong>AdminLTE</strong> version.</p>
+
+<h3>Generators</h3>
+
+<p>The biggest change in <strong>Faalis 2.x</strong> is to removal of old generators. If you were a <strong>Faalis</strong> user back in the 0.x and 1.x
+versions you remember that we used to have a set of very complex code generators. By giving them a <code>yml</code> or <code>json</code> file,
+representing our resource they would generate huge amount of code for that resource to work with both of our Rails and
+AngularJS. They were great and handy in their time but we come to realize that the easier way for developers is meta programming
+and dynamic codes not some generated static code for each resource. So we removed all the acient history and started fresh.</p>
+
+<p>In <strong>Faalis 2.x</strong> we have only two generator for generating resource code. The main one is <code>faalis:resource</code> which takes the
+resource name as an argument and generates a dashboard controller alongside with injecting corresponding routes into <code>routes.rb</code>.
+All the dashboard controllers inherit indirectly from <code>Faalis::Dashboard::ApplicationController</code> which provides handful set of
+methods and an easy to use DSL for developers to enhance their resource workflow in dashboard. Basically you only have to take
+care of translations related to your resource ( don&#39;t worry we have a solution for this too :P). Dashboard controllers works
+with the related resource model. I mean they do their business by extracting necessary information from models. So no extra
+large generated code base for each resource. This way using and modifying dashboard work flows get &#39;freakin&#39; easy. Also the provided
+DSL by <code>Faalis::Dashboard::ApplicationController</code> can be a big deal of help to you in order to enhance your work flow.</p>
+
+<p>The second generator <code>faalis:resources</code>, is just a shortcut for first one. It gets several resource names and generate them
+using <code>faalis:resource</code> generator.</p>
+
+<p>Make sure to take a look at <strong>Faalis</strong> <a href="http://guides.faalis.io">guides</a> to get more info about generators.</p>
+
+<h3>Authorization</h3>
+
+<p><strong>CanCan</strong> is a great gem but was not what we are looking for. So we ditched it in favor of <a href="https://github.com/elabs/pundit">Pundit</a>
+which is fantastic and robust gem designed for flexible authorization. In <strong>Faalis 2.x</strong> in addition to the old
+<code>read</code> , <code>create</code>, <code>update</code>, <code>destroy</code> and <code>ownership</code> permissions for each resource, developers can alter the pundit
+authorize class of each resource base on their desire which gives <strong>Faalis</strong> a huge advantage on authorization system.</p>
+
+<p>The most important thing to remember is the this new authorization system is backward compatible you only have to
+generate the pundit authorization class for your resource.</p>
+
+<h3>Formtastic</h3>
+
+<p>After ditching <strong>AngularJS</strong>, personally I was checking out different options we had to implement our forms. Among
+those I reviewed. <strong>Formtastic</strong> stood on top and we used it in new <strong>Faalis</strong>. Formtastic is really awesome and
+easy to use and extend which gives us a great opportunity to define our own input classes on demand.</p>
+
+<h2>Conclution</h2>
+
+<p>We never released <strong>Faalis 1.x</strong> officially (as gem I mean, you can use it via github). That&#39;s because we done several mistakes
+which I pointed out some of them in this article. But it gives us a very clear vision about where we want to go in the future. And
+<strong>Faalis 2.x</strong> is the result of what we learn alongside the road to <strong>1.x</strong>. Personally I found <strong>Faalis 2.x</strong> fascinating (:)) yeah
+because I wrote it). It&#39;s really handy and can help any developer save lots of his/her time during web development process.</p>
+
+<p>At last I really love to know your opinions on <strong>Faalis</strong> and its pros/cons. I love to hear about your suggestions or criticisms.
+I hope you find it plausible.</p>
+
+    </div>
+
+    <div class="ui grid">
+      <div class="right aligned row">
+        <div class="column">
+          <div class="ui tiny orange labeled icon top right pointing dropdown button">
+            <i class="share icon"></i>
+            <span class="text">Share</span>
+            <div class="menu">
+              <div class="item"><a href="https://twitter.com/intent/tweet?source=Yellowen_inc&text=Faalis+v2&url=http%3A%2F%2Flxsameer.com%2Fblog%2Fposts%2Fruby%2Frails%2Ffaalis%2Ffaalis-2%2F" class=""><i class="large twitter sign icon"></i> Twitter</a></div>
+              <div class="item"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flxsameer.com%2Fblog%2Fposts%2Fruby%2Frails%2Ffaalis%2Ffaalis-2%2F&t=Faalis+v2" class=""><i class="large facebook sign icon"></i> Facebook</a></div>
+              <div class="item"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flxsameer.com%2Fblog%2Fposts%2Fruby%2Frails%2Ffaalis%2Ffaalis-2%2F&title=Faalis+v2&summary=Faalis+v2&source=lxsameer%5C%27s+Blog" class=""><i class="large linkedin sign icon"></i> Linkedin</a></div>
+              <div class="item"><a href="https://plus.google.com/share?text=Faalis+v2&url=http%3A%2F%2Flxsameer.com%2Fblog%2Fposts%2Fruby%2Frails%2Ffaalis%2Ffaalis-2%2F" class=""><i class="large google plus sign icon"></i> Google+</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui bottom attached black inverted segment">
+    <div class="ui two column grid">
+      <div class="column fsegment">
+        <i class="block layout icon" title="Categories"></i> <a class="invert-link" href="/categories/ruby">Ruby</a> <a class="invert-link" href="/categories/rails">Rails</a> <a class="invert-link" href="/categories/faalis">Faalis</a> 
+
+      </div>
+      <div class="right aligned column fsegment">
+        <i class="tags icon" title="Tags"></i>  <a class="invert-link" href="/tags/Gem">Gem</a> <a class="invert-link" href="/tags/Faalis">Faalis</a> 
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<div class="row author">
+  <div class="ui green segment">
+    <h1><img class="ui mini circular image" src="http://www.gravatar.com/avatar/15482f7b6361b463ea4b113d5a502400" title="Sameer Rahmani" style="display: inline;"> lxsameer</h1>
+    <div class="ui top right attached green  label">About Author</div>
+    <p><p>A Bad-ass developer who loves programming and enjoy learning new stuff. He is a senior developer in <a href="http://Yellowen.com">Yellowen</a> and manage some of the <strong>Yellowen</strong> free software projects. He enjoys software development, Electronics, Training Kyokushin Karate and play music.</p>
+</p>
+    <div class="ui two column grid">
+      <div class="row">
+
+        <div class="column">
+          
+          <span class="ohloh">
+          <a href='https://www.ohloh.net/accounts/35021?ref=Tiny' target='_blank'><img alt='Ohloh profile for Sameer Rahmani' border='0' height='15' src='https://www.ohloh.net/accounts/35021/widgets/account_tiny.gif' width='80' /></a>
+          </span>
+          
+        </div>
+
+        <div class="right aligned column">
+          
+          <a href="http://www.lxsameer.com"><i class="large globe icon"></i></a>
+          
+          
+          <a href="http://twitter.com/lxsameer"><i class="large twitter icon"></i></a>
+          
+          
+          <a href="http://github.com/lxsameer"><i class="large github icon"></i></a>
+          
+          
+          <a href="ir.linkedin.com/pub/sameer-rahmani/54/407/423/"><i class="large linkedin icon"></i></a>
+          
+    </div></div></div>
+  </div>
+</div>
+
+<br /><br />
+<div class="row comment">
+  <div class="ui segment">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'lxblog'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="ui two column page grid">
+          <div class="row">
+            <div class="column left aligned">
+              <span>© 2012-2015 <a class="invert" href="http://www.lxsameer.com">@lxsameer</a></span>
+            </div>
+            <div class="column right aligned">
+              <!-- Last build: 2016-05-27 -->
+              <a href="https://www.easyname.ch/de/hosting"><img src="http://assets.iranonrails.ir/images/easyname_grey.png" alt="domain" style="height: 20px" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+     $(".ui.dropdown").dropdown();
+     $(".ui.computer.sidebar").sidebar('setting', 'transision', 'push').sidebar('attach events', '.toggle.button.computer');
+     $(".ui.mobile.sidebar").sidebar('attach events', '.toggle.button.mobile');
+     $('.special.cards .image').dimmer({
+         on: 'hover'
+     });
+     $('.ui.rating').rating('disable', true);
+     $('.tada').transition('set looping').transition('tada', '600ms');
+    </script>
+
+    <script id="push-template" type="x-tmpl-mustache">
+      <div class="push item">
+        <img class="ui avatar image" src="/assets/avatar-ffcf03e02f67bd5b90d6ab9eba3bb2b8.jpeg"/>
+        <div class="content">
+          <div class="header">
+            Pushed to <span class="branch"><div class="ui mini label">[[ branch ]]</div></span> at <a href="https://www.github.com/[[ repo ]]">[[ repo ]]</a>
+          </div>
+          <div class="description">[[ date ]]</div>
+        </div>
+        <div class="list">
+        [[#commits]]
+          <div class="item">
+            <a href="https://www.github.com/[[ repo ]]/commit/[[ sha ]]"><span class="ui [[color ]] tiny label">[[ short_sha ]]</span> </a><spen class="desc">  [[ message ]] </spen>
+          </div>
+        [[/commits]]
+        </div>
+      </div>
+    </script>
+
+    <script id="create-template" type="x-tmpl-mustache">
+      <div class="create item">
+     <img class="ui avatar image" src="/assets/avatar-ffcf03e02f67bd5b90d6ab9eba3bb2b8.jpeg"/>
+        <div class="content">
+          <div class="header">
+            Created a new [[ type ]] at <a href="https://www.github.com/[[ repo ]]">[[ repo ]]</a>
+          </div>
+          <div class="description">[[ date ]]</div>
+        </div>
+        <div class="list">
+          <div class="item">
+            <div class='desc'><div class="ui tiny [[ color ]] label">[[ ref ]]</div> [[ desc ]] </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-64266845-1', 'auto');
+     ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
